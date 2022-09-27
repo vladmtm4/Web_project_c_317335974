@@ -1,0 +1,419 @@
+*
+{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.active {
+    border: 5px solid  aquamarine;
+}
+
+:root
+{
+    --bej : #ffe9d4;
+    --bluish : #7eb1dc;
+    
+}
+
+.container
+{
+display: grid;
+grid-template-areas: 
+'header header header'
+'welcome_left welcome welcome_right'
+'vision vision vision';
+}
+
+
+.header {
+    grid-area: header;
+    background-color: var(--bluish);
+    height: 10vh;
+    animation-name: aquablink;
+    animation-duration: 1s;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+    display: inline;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav_bar
+{
+    float:right;    
+}
+.nav_bar li 
+{
+    display: inline;
+    color: var(--bej);
+    float: left;
+}
+.nav_bar li a
+{
+    color: var(--bej);
+    text-decoration: none;
+    font-family: website_font;
+}
+.nav_bar li img
+{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#site_name {
+    font-size: 50px;
+    color: var(--bej);
+    display: inline;
+    font-family: website_font;
+}
+
+#welcome {
+    grid-area: welcome;
+    background-color: var(--bej);
+    height: 45vh;
+    text-align: center;
+    display: inline;
+    max-width: 100%;
+    height: auto;
+}
+
+#welcome_left
+{
+    height: 45vh;
+    grid-area: welcome_left;
+    background-color: var(--bej);
+    max-width: 100%;
+    height: auto;
+
+}
+
+#welcome_right
+{
+    height: 45vh;
+    grid-area: welcome_right;
+    background-color: var(--bej);
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+#welcome_header
+{
+    font-size: 60px;
+    font-family: website_font;
+    display: inline;
+
+}
+#text_under_header
+{
+    font-family: website_font;
+    font-size: 30px;
+    
+}
+
+#sign_up_button
+{
+    font-family: website_font;
+    background-color: var(--bluish);
+    width: 70px;
+    animation: Sizeup 2s 2s 5  ease-in-out;
+}
+
+#log_in_button
+{
+    font-family: website_font;
+    background-color: var(--bluish);
+    width: 70px;
+
+}
+
+#logo
+{
+    display: inline;
+}
+
+#welcome_text
+{
+    display: inline;
+}
+
+#logo
+{
+    width: 400px;
+    height: 300px;
+    float:right ;
+    
+}
+
+#vision {
+    grid-area: vision;
+    background-color: var(--bluish);
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  
+    gap: 100px;
+    grid-auto-flow: column;
+    max-width: 100%;
+    height: auto;
+    font-family: website_font;
+
+}
+.column {
+    text-align: center;
+  }
+
+.vision_pic
+{
+    display: block;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+.container_login
+{
+display: grid;
+grid-template-areas: 
+'header header header'
+'log_in_page log_in_page log_in_page';
+font-family: website_font;
+}
+
+.log_in_page
+{
+    grid-area: log_in_page;
+    height: auto;
+    background-color: var(--bej);
+    max-width: 100%;
+}
+
+#log_in_box
+{
+    border: 2px black solid;
+    text-align: center;
+    width: fit-content;
+    padding: 50px 0;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#login_text
+{
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+.container_sign_up
+{
+display: grid;
+grid-template-areas: 
+'header header header'
+'sign_up_page sign_up_page sign_up_page';
+font-family: website_font;
+}
+
+.sign_up_page
+{
+    grid-area: sign_up_page;
+    background-color: var(--bej);
+    height: auto;
+    max-width: 100%;
+
+}
+
+#sign_up_box
+{
+    border: 2px black solid;
+    text-align: center;
+    width: fit-content;
+    padding: 50px 0;
+    margin: auto;
+    height: auto;
+
+}   
+
+
+
+
+#sign_up_text
+{
+    font-size: larger;
+}
+
+#sign_up_box li
+{
+    display: inline;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_my_profile
+{
+display: grid;
+grid-template-areas: 
+'header header header'
+'my_profile_page my_profile_page my_profile_page';
+font-family: website_font;
+}
+
+.my_profile_page
+{
+    grid-area: my_profile_page;
+    background-color: var(--bej);
+    height: auto;
+    max-width: 100%;
+    border: 2px black solid;
+    text-align: center;
+}
+
+#my_profile_box
+{
+    width: auto;
+    padding: 50px 0;
+    margin: left;
+    height: auto;
+}   
+
+
+#my_profile_text
+{
+    font-size: larger;
+}
+
+#my_profile_box li
+{
+    display: inline;
+    float: left;
+}
+
+#my_preference ul
+{ 
+  justify-content:space-between;
+  display: flex;
+}
+
+.profile_pic
+{
+    height: 50%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_meet
+{
+display: grid;
+grid-template-areas: 
+'header header header'
+'meet_page meet_page meet_page';
+font-family: website_font;
+}
+
+.meet_page
+{
+    grid-area: meet_page;
+    background-color: var(--bej);
+    height: auto;
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  
+    gap: 100px;
+    grid-auto-flow: column;
+    max-width: 100%;
+    height: auto;
+}
+
+.meet_page li
+{
+    display: inline;
+}
+
+.meet_button
+{
+    display: inline;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes aquablink {
+
+    0% {background-color: aqua;}
+    50% {background-color: white;}
+    100% {background-color: aqua;}
+
+}
+
+@keyframes Sizeup {
+    0% {font-size: 20px; width: 70px;}
+    50% {font-size: 30px; width: 100px;}
+    100% {font-size: 20px; width: 70px;}
+}
+
+@font-face {
+    font-family: website_font;
+    src: url(./Oswald-VariableFont_wght.ttf);
+    }
